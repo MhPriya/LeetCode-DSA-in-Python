@@ -5,7 +5,12 @@ class Solution:
         # if len(s)!= len(t):
         #     return False
         # return sorted(s) == sorted(t)
-        if len(s)!=len(t):
+        # if len(s)!=len(t):
+        #     return False
+        # count_s, count_t= Counter(s), Counter(t)
+        # return count_s == count_t
+        if len(s) != len(t):
             return False
-        count_s, count_t= Counter(s), Counter(t)
-        return count_s == count_t
+        c_s, c_t = Counter(s),Counter(t)
+        return c_s == c_t
+
