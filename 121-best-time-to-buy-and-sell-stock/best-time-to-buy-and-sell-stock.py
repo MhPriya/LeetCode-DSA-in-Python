@@ -3,11 +3,11 @@ class Solution:
         min_price = float('inf')
         max_profit = 0
 
-        for p in prices:
-            if p < min_price:
-                min_price = p
+        for price in prices:
+            if price < min_price:
+                min_price = price
             else:
-                profit = p - min_price
+                profit = price - min_price
                 if profit > max_profit:
                     max_profit = profit
         return max_profit
