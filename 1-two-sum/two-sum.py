@@ -18,10 +18,10 @@ class Solution:
     # # If no solution is found, return an empty list
     #     return []
 
-        num_to_index = {}
+        num_too_index = {}
         for index, num in enumerate(nums):
             complement = target - num
-            if complement in num_to_index:
-                return(num_to_index[complement], index)
-            num_to_index[num]= index
+            if complement in num_too_index:
+                return(num_too_index[complement], index)
+            num_too_index[num]= index
         return[]
