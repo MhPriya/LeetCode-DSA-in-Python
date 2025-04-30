@@ -19,9 +19,9 @@ class Solution:
     #     return []
 
         num_too_index = {}
-        for index, num in enumerate(nums):
-            complement = target - num
+        for index, n in enumerate(nums):
+            complement = target - n
             if complement in num_too_index:
                 return(num_too_index[complement], index)
-            num_too_index[num]= index
+            num_too_index[n]= index
         return[]
